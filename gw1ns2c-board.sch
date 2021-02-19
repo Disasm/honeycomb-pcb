@@ -332,8 +332,8 @@ $Comp
 L Device:LED_RGBA D2
 U 1 1 60128EA8
 P 6600 5150
-F 0 "D2" V 6646 4820 50  0000 R CNN
-F 1 "LED_RGBA" V 6555 4820 50  0000 R CNN
+F 0 "D2" H 6600 4775 50  0000 C CNN
+F 1 "LED_RGBA" H 6600 4684 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C19HE1WT" H 6600 5100 50  0001 C CNN
 F 3 "~" H 6600 5100 50  0001 C CNN
 	1    6600 5150
@@ -779,7 +779,7 @@ L Device:R_Small R9
 U 1 1 6015961B
 P 2350 6850
 F 0 "R9" H 2291 6804 50  0000 R CNN
-F 1 "28k" H 2291 6895 50  0000 R CNN
+F 1 "33k" H 2291 6895 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 6850 50  0001 C CNN
 F 3 "~" H 2350 6850 50  0001 C CNN
 	1    2350 6850
@@ -790,7 +790,7 @@ L Device:R_Small R10
 U 1 1 60159F68
 P 2350 7050
 F 0 "R10" H 2291 7004 50  0000 R CNN
-F 1 "56.2k" H 2291 7095 50  0000 R CNN
+F 1 "68k" H 2291 7095 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 7050 50  0001 C CNN
 F 3 "~" H 2350 7050 50  0001 C CNN
 	1    2350 7050
@@ -1351,4 +1351,8 @@ F 3 "" H 7000 2100 50  0001 C CNN
 	1    7000 2100
 	1    0    0    -1  
 $EndComp
+Text Notes 1950 7700 0    50   ~ 0
+According to the datasheet,\nrecommended resistor values\nare 28k / 56.2k, but 33k / 68k\nalso works fine.\nAnyway, this power supply\nis not used with UX chips.
+Text Notes 550  4600 0    50   ~ 0
+Deviation: on a board 4.3k\nis used instead of 4.7k
 $EndSCHEMATC
