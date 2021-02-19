@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name gw1ns-2c)(type Legacy)(uri ${KIPRJMOD}/gw1ns-2c.lib)(options "")(descr ""))
+)
