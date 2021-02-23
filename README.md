@@ -2,6 +2,8 @@
 
 An experimental board with GW1NS-2C FPGA.
 
+![PCB render](render.png)
+
 ## Programming
 
 To program the board you need [openFPGALoader](https://github.com/trabucayre/openFPGALoader).
